@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+
+.container{
+    font-family: 'Montserrat', sans-serif;
+    text-align: justify;
+    line-height: 25px;
+    width: 1000px;
+    margin: auto;
+}
+.flex-container{
+    display: flex;
+    flex-direction: row;
+}
+.flex-container > div{
+  width: 1000px;
+  /* width: 100%; */
+}
+.kiri{
+  margin-top: 45px;
+  padding: 30px;
+  /* flex: 480px; */
+  flex: 50%;
+}
+.kanan{
+  padding: 30px;
+  /* flex: 480px; */
+  flex: 50%;
+}
+.judul-kanan {
+  letter-spacing: 3px;
+  font-weight: 900;
+}
+.judul-kiri{
+    font-weight: 900;
+    font-size: 30px;
+  
+}
+button {
+  background-color: #043bf0; 
+  border: none;
+  color: white;
+  box-shadow: 10px 10px 30px grey;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  width: 200px;
+  margin-bottom: 30px;
+  position: relative;
+  margin-left: -50px;
+}
+img{
+  float: right;
+  width: 250px;
+  height: 300px;
+  margin-right: 120px;
+}
+.pindah{
+  margin-right: -100px;
+}
+
+
+/* responsive */
+@media (max-width: 800px) {
+  .flex-container {
+    flex-direction: column;
+  }
+}
