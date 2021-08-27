@@ -1,4 +1,5 @@
-var clicks = 0;
+let clicks = 0;
+let custompopup = document.getElementById('customPopUp');
 
 function runFunction(){
     document.getElementById('judul-kiri').style.color = 'blue';
@@ -10,4 +11,25 @@ function runFunction(){
     gambar.classList.toggle('pindah');
 
     document.getElementById('clicks').innerHTML = 'Button di klik ' +clicks+ ' kali';
+
+}
+
+let modal = document.getElementById("PopUpModal");
+
+let btn = document.getElementById("btnPopUp");
+
+let span = document.getElementsByClassName("close")[0];
+
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
 }

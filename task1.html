@@ -13,16 +13,32 @@
         <div class="flex-container">
             <div class="kiri">
                 <h1 class="judul-kiri" id="judul-kiri">Mission and Goals</h1>
-                <button onclick="runFunction()">mission</button>
+                <button onclick="runFunction()" class="button-mission">mission</button>
                 <p style="text-indent: 10px;" id="paragraf-kiri">He as spoke avoid given downs money on we. Of properly carriage shutters ye as wandered up repeated moreover. Article evident arrived express highest men did boy. Mistress sensible entirely am so. Quick can manor smart money hopes worth too.Comfort produce husband boy her had hearing. Law others theirs passed but wishes. You day real less till dear read. Considered use dispatched melancholy sympathize discretion led.</p>
                 <p><a id="clicks"></a></p>
+                
+                <button onclick="runPopUp()" class="popup" id="btnPopUp">Pop Up</button>
+                
             </div>
 
             <div class="kanan">
                 <h3 class="judul-kanan">goals</h3>
-                 <p>Article evident arrived express highest men did boy Mistress sensible entirely am so. Quick can manor smart money hopes worth too. Comfort produce husband boy her had hearing. Law others theirs passed but wishes. You day real less till dear read. Considered use dispatched melancholy sympathize discretion led. Oh feel if up to till like.</p>
-                 <img src="bangunan.jpg" alt="" class="pindah" id="gambar">
+                <p class="paragraf-kanan">Article evident arrived express highest men did boy Mistress sensible entirely am so. Quick can manor smart money hopes worth too. Comfort produce husband boy her had hearing. Law others theirs passed but wishes. You day real less till dear read. Considered use dispatched melancholy sympathize discretion led. Oh feel if up to till like.</p>
+                <img src="bangunan.jpg" alt="" class="img" id="gambar">
             </div>
+        </div>
+    </div>
+
+    <div id="PopUpModal" class="modal">
+        <div class="modal-content">
+          <div class="modal-header">
+            <span class="close">Tutup</span>
+            <h2>Pop Up Selamat Datang</h2>
+          </div>
+          <div class="modal-body">
+            <p>Halo, Selamat Datang!</p>
+            <p>Silahkan tekan Tutup untuk menutup pop up ini..</p>
+          </div>
         </div>
     </div>
 
